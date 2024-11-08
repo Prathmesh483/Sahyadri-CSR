@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #e2efff;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            gap: 20px;
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            gap: 50px;
+        }
+        nav ul li{
+            list-style-type: none;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: #333333;
+            color: white;
+        }
+        li a{
+            text-decoration: none;
+            color: white;
+            font-size: 1.3rem;
+        }
+        li a:hover{
+            color: lightseagreen;
+            transition:  0.8s ease ;
+        }
+        .box{
+            width: 20vw;
+            height: auto;
+            background-color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            border-radius: 5px;
+        }
+        .box:hover{
+            translate: 10deg;
+            transform: translateY(-10px);  
+            transition: 0.5s ease-in;
+        }
+        .box img{
+            width: inherit;
+            height: 250px;
+        }
+        .price{
+            color: rgb(31, 130, 169);
+        }
+        .box a{
+            text-decoration: none;
+            padding: 20px; 
+            background-color: rgb(10, 137, 50);
+            color: white;
+            font-size: larger;
+            border-radius: 10px;
+        }
+        .main{
+            width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .footer {
+            background-color: #333333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Our Online Store</h1>
+        <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Best Sellers</a></li>
+            <li><a href="#">Sale</a></li>
+        </ul>
+        </nav>
+    </div>
+    
+    <div class="container">
+        <div class="main">
+            <div class="box">
+            <img src="img.jpg" alt="">
+            <h2>Product 1</h2>
+            <h3 class="price">$19.96</h3>
+            <a href="#">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="img.jpg" alt="">
+            <h2>Product 2</h2>
+            <h3 class="price">$21.90</h3>
+            <a href="#">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="img.jpg" alt="">
+            <h2>Product 1</h2>
+            <h3 class="price">$19.96</h3>
+            <a href="#">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="img.jpg" alt="">
+            <h2>Product 2</h2>
+            <h3 class="price">$21.90</h3>
+            <a href="#">Add to Cart</a>
+        </div>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; 2023 Our Online Store. All rights reserved.
+    </div>
+</body>
+</html>
